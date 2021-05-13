@@ -13,6 +13,10 @@ public class Main extends Base {
 	// start registration
 	public boolean register() throws InterruptedException {
 
+		if (isExist(By.xpath("//*[@id=\"wm-shoutout-337329\"]/div[1]")))
+			click(By.xpath("//*[@id=\"wm-shoutout-337329\"]/div[1]"));
+
+		
 		click(By.xpath("//button[text()='הרשמה']"));
 		if (isExist(By.id("modal-title")))
 			return true;
@@ -24,6 +28,10 @@ public class Main extends Base {
 	// start login
 		public boolean login() throws InterruptedException {
 			
+			
+			if (isExist(By.xpath("//*[@id=\"wm-shoutout-337329\"]/div[1]")))
+				click(By.xpath("//*[@id=\"wm-shoutout-337329\"]/div[1]"));
+
 			//Click connection
 			click(By.xpath("//button[text()='התחברות']"));
 			

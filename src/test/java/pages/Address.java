@@ -17,25 +17,26 @@ public class Address extends Base {
 	public boolean addAddress() throws InterruptedException {
 
 		Thread.sleep(3000);
-		//button search address
+		// button search address
 		click(By.xpath("//*[@id=\"root\"]/div[2]/header/div[2]/div/div[2]/div/div/button/div[2]/div"));
 		Thread.sleep(2000);
-		
-		//button to Add location
+
+		// button to Add location
 		click(By.xpath("//*[@id=\"dropdown-content\"]/div/div/div/div[2]/button"));
 		Thread.sleep(3000);
-		
-		//click Enter an address
+
+		// click Enter an address
 		click(By.xpath("//input[@id=\"homePage_SelectAddress\"]"));
-		
+
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).perform();
-		
-		Thread.sleep(3000);
-		//contains Israel in address
-		String localName = getText(By.xpath("//input[@id=\"homePage_SelectAddress\"]"));
-		
-		if(localName.contains("ישראל"))
+
+		Thread.sleep(5000);
+		// contains Israel in address
+		//String localName = getText(By.xpath("//input[@id=\"homePage_SelectAddress\"]"));
+		String localName1 = driver.findElement(By.id("homePage_SelectAddress")).getAttribute("value");
+
+		if (localName1.contains("ישראל"))
 			return true;
 		else
 			return false;

@@ -83,7 +83,8 @@ public class Restaurant extends Base {
 
 		// choice dish
 		click(By.xpath("//*[@id=\"dishName_2117081_0\"]/div"));
-
+		Thread.sleep(2000);
+		
 		// button select dish
 		click(By.xpath("//*[@id=\"modals\"]/div/div/div/div/div/div[4]/div/button/div"));
 		Thread.sleep(2000);
