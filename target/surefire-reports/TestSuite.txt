@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 49.174 s <<< FAILURE! - in TestSuite
+tests.SanityTest.LoginUsingFacebook  Time elapsed: 20.601 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: .styled__PrimaryText-zzhidz-4.cfoTPh (tried for 10 second(s) with 500 milliseconds interval)
+	at tests.SanityTest.LoginUsingFacebook(SanityTest.java:100)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-R3OMO24', ip: '192.168.43.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\UseR\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ccafe70d5c724cdec4f45bce7835d767
+*** Element info: {Using=css selector, value=.styled__PrimaryText-zzhidz-4.cfoTPh}
+	at tests.SanityTest.LoginUsingFacebook(SanityTest.java:100)
+
+tests.SanityTest.afterMethod[[TestResult name=LoginUsingFacebook status=FAILURE method=SanityTest.LoginUsingFacebook()[pri:1, instance:tests.SanityTest@5a1c0542] output={null}]](0)  Time elapsed: 20.608 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-R3OMO24', ip: '192.168.43.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\UseR\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ccafe70d5c724cdec4f45bce7835d767
+	at tests.SanityTest.afterMethod(SanityTest.java:115)
+

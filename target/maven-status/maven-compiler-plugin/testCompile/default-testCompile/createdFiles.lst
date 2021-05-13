@@ -1,0 +1,9 @@
+tests\ErrorHandlingTest.class
+pages\Main.class
+pages\Base.class
+tests\SanityTest.class
+tests\RegistrationTest.class
+pages\Registration.class
+utilites\Utilities.class
+utilites\GetDriver.class
+pages\Login.class
